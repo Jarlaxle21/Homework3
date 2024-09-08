@@ -119,11 +119,12 @@ public class Main {
         double weightLossGoalInGr = weightLossGoalInKg / oneKgInGr;
 
         int minDays = (int) weightLossGoalInGr / minWeightLossPerDay;
-        int maxDays = (int) weightLossGoalInGr / maxWeightLossPerDay;;
+        int maxDays = (int) weightLossGoalInGr / maxWeightLossPerDay;
+        ;
         double avgDays = (minDays + maxDays) / 2;
         System.out.println("Минимальное количество дней на похудение: " + minDays);
         System.out.println("Максимальное количество дней на похудение: " + maxDays);
-        System.out.println("Среднее количество дней на похудение: " +avgDays);
+        System.out.println("Среднее количество дней на похудение: " + avgDays);
     }
 
     public static void task8() {
@@ -131,15 +132,15 @@ public class Main {
         int denisesSalary = 83690;
         int christinasSalary = 76230;
         int supplementSalaryPercent = 10;
-        double supplementSalaryMasha = (double) mashasSalary /supplementSalaryPercent;
-        double supplementSalaryDenis = (double) denisesSalary /supplementSalaryPercent;
-        double supplementSalaryChristina = (double) christinasSalary /supplementSalaryPercent;
-        double newMashasSalary = mashasSalary+supplementSalaryMasha;
-        double newDenisesSalary = denisesSalary + supplementSalaryDenis ;
-        double newChristinasSalary = christinasSalary+supplementSalaryChristina;
+        double supplementSalaryMasha = (double) mashasSalary / supplementSalaryPercent;
+        double supplementSalaryDenis = (double) denisesSalary / supplementSalaryPercent;
+        double supplementSalaryChristina = (double) christinasSalary / supplementSalaryPercent;
+        double newMashasSalary = mashasSalary + supplementSalaryMasha;
+        double newDenisesSalary = denisesSalary + supplementSalaryDenis;
+        double newChristinasSalary = christinasSalary + supplementSalaryChristina;
         System.out.println("Маша теперь получает "
                 + newMashasSalary + " рублей. Годовой доход вырос на "
-                        + supplementSalaryMasha + " рублей");
+                + supplementSalaryMasha + " рублей");
         System.out.println("Денис теперь получает "
                 + newDenisesSalary + " рублей. Годовой доход вырос на "
                 + supplementSalaryDenis + " рублей");
